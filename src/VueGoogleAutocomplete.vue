@@ -56,6 +56,11 @@
             default: null
           },
 
+          fields: {
+            type: Array,
+            default: null
+          },
+
           enableGeolocation: {
             type: Boolean,
             default: false
@@ -124,6 +129,10 @@
 
           if (this.types) {
             options.types = [this.types];
+          }
+
+          if (this.fields) {
+            options.fields = this.fields;
           }
 
           if (this.country) {
