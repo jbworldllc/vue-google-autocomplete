@@ -132,6 +132,7 @@
           }
 
           if (this.fields) {
+            console.log(this.fields);
             options.fields = this.fields;
           }
 

@@ -3,7 +3,7 @@
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.2/css/bulma.min.css" />
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCe1exctmeJjIb4guyT6newSpyJ7kA3aLc&libraries=places"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtiCRoQovTS4U-fymOo27y66KdFssiuvg&libraries=places"></script>
 </head>
 <body>
 <section class="hero is-medium is-primary is-bold">
@@ -30,6 +30,7 @@
                     v-on:placechanged="getAddressData"
                     v-on:error="handleError"
                     country="sg"
+                    :fields="['opening_hours','utc_offset_minutes']"
                 >
                 </vue-google-autocomplete>
             </p>
